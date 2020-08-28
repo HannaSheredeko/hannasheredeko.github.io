@@ -1,0 +1,458 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    background-color: #f5f7fa;
+    padding: 40px;
+    font-size: 14px;
+    letter-spacing: 0.42px;
+}
+
+.wrapper {
+    background: #ffffff;
+    display: flex;
+    box-shadow: 4px 4px 20px 2px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.sidebar {
+    background: #1e2939;
+    width: 370px;
+    padding: 40px 0;
+    color: #ffffff;
+}
+
+.my-photo {
+    max-width: 370px;
+}
+
+.about-me-conteiner {
+    padding: 100px 90px;
+    color: #000000;
+}
+
+.sidebar-contanier {
+    padding: 0 40px;
+}
+
+.sidebar-heading {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 40px 0 10px;
+}
+
+.contacts {
+    padding-bottom: 3px;
+}
+
+.sidebar-ul {
+    font-weight: 400;
+    margin-left: 14px;
+    list-style: none;
+    /* Remove default bullets */
+}
+
+.sidebar-ul li::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #ff6b08;
+    font-weight: bold;
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
+}
+
+.hydrated {
+    vertical-align: middle;
+}
+
+.link-sidebar {
+    color: #7a818a;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.link-sidebar:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    transition: width 0.4s ease-in-out;
+    background-color: #7a818a;
+}
+
+.link-sidebar:hover:after,
+.link-sidebar:focus:after {
+    width: 100%;
+}
+
+.hover-mail:hover {
+    color: #000000;
+}
+
+.link-sidebar:hover {
+    color: #ffffff;
+}
+
+.name {
+    font-size: 40px;
+    padding: 30px 0;
+}
+
+.about-me-text {
+    max-width: 450px;
+    color: #595959;
+}
+
+.story-heading {
+    font-size: 25px;
+    padding: 40px 0 18px;
+}
+
+.company-name {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.experience {
+    max-width: 600px;
+}
+
+.main-ul {
+    font-weight: 400;
+    margin-left: 15px;
+    list-style: none;
+    /* Remove default bullets */
+    color: #595959;
+    padding-top: 5px;
+}
+
+.main-ul li::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #595959;
+    font-weight: bold;
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
+}
+
+
+.link-main {
+    color: #595959;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.link-main:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    transition: width 0.4s ease-in-out;
+    background-color: #bebebe;
+}
+
+.link-main:hover:after,
+.link-main:focus:after {
+    width: 100%;
+}
+
+.link-main:hover {
+    color: #000000;
+} 
+
+.education {
+    padding-bottom: 20px;
+}
+
+/* .project-item {
+    font-weight: 700;
+    margin-left: 17px;
+}
+
+.tech-name {
+    font-weight: 400;
+    color: #595959;
+}
+
+.dots {
+    font-weight: 100;
+    color: #595959;
+} */
+
+.company-profession {
+    color: #ff6b08;
+}
+
+.time-profession {
+    color: #a8a8a8;
+    font-size: 12px;
+}
+
+.divider {
+    color: #000000;
+    font-size: 14px;
+}
+
+.link-btn {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.link-btn-tl {
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header-burger {
+    display: none;
+    width: 40px;
+    height: 28px;
+    position: relative;
+}
+
+.burger-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+}
+
+.burger-line_first {
+    top: 0;
+}
+
+.burger-line_second {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger-line_third {
+    bottom: 0;
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding: 30px;
+    }
+
+    .sidebar {
+        width: 300px;
+    }
+
+    .sidebar-heading {
+        padding: 30px 0 10px;
+        font-size: 20px;
+    }
+
+    .my-photo {
+        max-width: 300px;
+    }
+
+    .sidebar-contanier {
+        padding: 0 30px;
+    }
+
+    .about-me-conteiner {
+        padding: 70px 40px;
+    }
+
+    .name {
+        font-size: 28px;
+        padding: 20px 0;
+    }
+
+    .story-heading {
+        font-size: 20px;
+        padding: 30px 0 12px;
+    }
+
+    .education {
+        padding-bottom: 12px;
+    }
+
+    .company-name {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .sidebar-ul {
+        margin-left: 5px;
+    }
+
+    .specialty {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .my-photo {
+        max-width: 150px;
+    }
+
+    .sidebar {
+        width: 150px;
+        padding: 30px 0;
+    }
+
+    .link-sidebar {
+        display: none;
+    }
+
+    .sidebar-heading {
+        font-size: 18px;
+        padding: 20px 0 5px;
+        text-align: center;
+    }
+
+    .contacts {
+        padding: 0;
+    }
+
+    .sidebar-contanier {
+        padding: 0 20px;
+    }
+
+    .icons {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .link-btn {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .about-me-conteiner {
+        padding: 30px 20px;
+    }
+
+    .name {
+        font-size: 22px;
+        padding: 10px 0;
+    }
+
+    .story-heading {
+        padding: 20px 0 8px;
+    }
+
+    /* .dots {
+        display: none;
+    } */
+
+    .education {
+        padding-bottom: 8px;
+    }
+
+
+}
+
+@media (max-width: 479px) {
+    body {
+        padding: 20px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 0;
+    }
+
+    .my-photo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .sidebar-contanier {
+        padding-bottom: 20px;
+    }
+
+    /* .sidebar-contanier {
+        display: none;
+    } */
+
+
+    .about-me-conteiner {
+        padding: 20px;
+    }
+
+
+    /*____________ burger menu */
+
+    /* .header-burger {
+        display: block;
+    }
+
+    .contacts-menu {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #1e2939;
+        z-index: 10;
+        padding: 20px;
+        transform: translateX(100%);
+        transition: .2s all linear;
+    }
+
+    .contacts-menu-active {
+        transform: translateX(0);
+    }
+    
+    .header-sidebar-close {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 11;
+    }
+
+    .header-line-close {
+        display: block;
+        height: 2px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+    }
+
+    .header-line-close:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header-line-close:last-child {
+        transform: translateY(-50%) rotate(-45deg);
+    } */
+
+    /*__________________end burger menu */
+
+}
