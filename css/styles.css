@@ -123,6 +123,12 @@ body {
     padding-bottom: 5px;
 }
 
+.unit {
+    font-size: 15px;
+    padding-top: 10px;
+    color: #595959;
+}
+
 .experience {
     max-width: 600px;
 }
@@ -249,6 +255,10 @@ body {
     bottom: 0;
 }
 
+.reference {
+    padding: 10px 0;
+}
+
 @media (max-width: 1024px) {
     body {
         padding: 30px;
@@ -292,6 +302,10 @@ body {
     .company-name {
         font-size: 16px;
         padding: 0;
+    }
+
+    .unit {
+        font-size: 12px;
     }
 
     .sidebar-ul {
