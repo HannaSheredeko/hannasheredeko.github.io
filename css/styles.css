@@ -119,7 +119,7 @@ body {
 }
 
 .company-name {
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 5px;
 }
 
@@ -179,26 +179,11 @@ body {
 
 .link-main:hover {
     color: #000000;
-} 
+}
 
 .education {
     padding-bottom: 20px;
 }
-
-/* .project-item {
-    font-weight: 700;
-    margin-left: 17px;
-}
-
-.tech-name {
-    font-weight: 400;
-    color: #595959;
-}
-
-.dots {
-    font-weight: 100;
-    color: #595959;
-} */
 
 .company-profession {
     color: #ff6b08;
@@ -256,7 +241,7 @@ body {
 }
 
 .reference {
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 @media (max-width: 1024px) {
@@ -300,7 +285,7 @@ body {
     }
 
     .company-name {
-        font-size: 16px;
+        font-size: 14px;
         padding: 0;
     }
 
@@ -374,10 +359,6 @@ body {
         padding: 20px 0 8px;
     }
 
-    /* .dots {
-        display: none;
-    } */
-
     .education {
         padding-bottom: 8px;
     }
@@ -408,65 +389,8 @@ body {
         padding-bottom: 20px;
     }
 
-    /* .sidebar-contanier {
-        display: none;
-    } */
-
-
     .about-me-conteiner {
         padding: 20px;
     }
-
-
-    /*____________ burger menu */
-
-    /* .header-burger {
-        display: block;
-    }
-
-    .contacts-menu {
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: #1e2939;
-        z-index: 10;
-        padding: 20px;
-        transform: translateX(100%);
-        transition: .2s all linear;
-    }
-
-    .contacts-menu-active {
-        transform: translateX(0);
-    }
-    
-    .header-sidebar-close {
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 11;
-    }
-
-    .header-line-close {
-        display: block;
-        height: 2px;
-        background-color: #ffffff;
-        position: absolute;
-        top: 50%;
-        width: 100%;
-    }
-
-    .header-line-close:first-child {
-        transform: translateY(-50%) rotate(45deg);
-    }
-
-    .header-line-close:last-child {
-        transform: translateY(-50%) rotate(-45deg);
-    } */
-
-    /*__________________end burger menu */
 
 }
