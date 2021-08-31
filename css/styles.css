@@ -106,6 +106,7 @@ body {
 .name {
     font-size: 40px;
     padding: 30px 0;
+    color: #ff6b08;
 }
 
 .about-me-text {
@@ -115,16 +116,16 @@ body {
 
 .story-heading {
     font-size: 25px;
-    padding: 40px 0 18px;
+    padding: 40px 0 10px;
 }
 
 .company-name {
     font-size: 18px;
-    padding-bottom: 5px;
+    padding-top: 10px;
 }
 
 .unit {
-    font-size: 15px;
+    font-size: 14px;
     padding-top: 10px;
     color: #595959;
 }
@@ -139,7 +140,7 @@ body {
     list-style: none;
     /* Remove default bullets */
     color: #595959;
-    padding-top: 5px;
+    padding: 5px 0 10px;
 }
 
 .main-ul li::before {
@@ -153,7 +154,6 @@ body {
     margin-left: -1em;
     /* Also needed for space (tweak if needed) */
 }
-
 
 .link-main {
     color: #595959;
@@ -181,12 +181,13 @@ body {
     color: #000000;
 }
 
-.education {
-    padding-bottom: 20px;
+.company-profession {
+    color: #59bf38;
 }
 
-.company-profession {
+.education-path {
     color: #ff6b08;
+    font-size: 14px;
 }
 
 .time-profession {
@@ -231,6 +232,13 @@ body {
     top: 0;
 }
 
+.about-project {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 10px;
+    color: #6b23a2;
+}
+
 .burger-line_second {
     top: 50%;
     transform: translateY(-50%);
@@ -242,6 +250,11 @@ body {
 
 .reference {
     padding: 5px 0;
+}
+
+.unit-profession {
+    font-size: 11px;
+    color: #b3b4b3;
 }
 
 @media (max-width: 1024px) {
@@ -277,16 +290,11 @@ body {
 
     .story-heading {
         font-size: 20px;
-        padding: 30px 0 12px;
-    }
-
-    .education {
-        padding-bottom: 12px;
+        padding: 30px 0 5px;
     }
 
     .company-name {
-        font-size: 14px;
-        padding: 0;
+        font-size: 15px;
     }
 
     .unit {
@@ -356,11 +364,7 @@ body {
     }
 
     .story-heading {
-        padding: 20px 0 8px;
-    }
-
-    .education {
-        padding-bottom: 8px;
+        padding: 20px 0 5px;
     }
 
 
